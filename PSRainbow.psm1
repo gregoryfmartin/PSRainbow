@@ -10,4 +10,3 @@ Foreach($ColorDataKey in $RawColorData.Keys) {
 }
 
 Export-ModuleMember -Variable PSRainbowColors
-Export-ModuleMember -Function New-ConsoleColor24
