@@ -47,3 +47,46 @@ Class ConsoleColor24 {
         Return "`e[48;2;$($this.Red);$($this.Green);$($this.Blue)m"
     }
 }
+
+Function New-ConsoleColor24 {
+    [CmdletBinding(DefaultParameterSetName = 'ChannelSpec')]
+    Param(
+        [Parameter(ParameterSetName = 'ChannelSpec', Position = 0)]
+        [ValidateRange(0, 255)]
+        [Int]$Red,
+
+        [Parameter(ParameterSetName = 'ChannelSpec', Position = 1)]
+        [ValidateRange(0, 255)]
+        [Int]$Green,
+
+        [Parameter(ParameterSetName = 'ChannelSpec', Position = 2)]
+        [ValidateRange(0, 255)]
+        [Int]$Blue,
+
+        [Parameter(ParameterSetName = 'ChannelHex')]
+        [Int]$Hex,
+
+        [Parameter(ParameterSetName = 'ColorCopy')]
+        [ConsoleColor24]$CopyFrom
+    )
+
+    Process {
+        Switch($PSCmdlet.ParameterSetName) {
+            'ChannelSpec' {
+                Return [ConsoleColor24]::new($Red, $Green, $Blue)
+            }
+
+            'ChannelHex' {
+                Return [ConsoleColor24]::new($Hex)
+            }
+
+            'ColorCopy' {
+                Return [ConsoleColor24]::new($CopyFrom)
+            }
+
+            Default {
+                Return [ConsoleColor24]::new(0, 0, 0)
+            }
+        }
+    }
+}
