@@ -39,11 +39,11 @@ Class ConsoleColor24 {
         $this.Blue  = $CopyFrom.Blue
     }
 
-    [String]ToAnsiForegroundString() {
+    [String]ToAnsiForeground() {
         Return "`e[38;2;$($this.Red);$($this.Green);$($this.Blue)m"
     }
 
-    [String]ToAnsiBackgroundString() {
+    [String]ToAnsiBackground() {
         Return "`e[48;2;$($this.Red);$($this.Green);$($this.Blue)m"
     }
 }
