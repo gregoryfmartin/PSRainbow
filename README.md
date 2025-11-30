@@ -14,15 +14,11 @@ Yeah, I wrote the readme with AI. Sue me. It's 22:32 and I'm tired.
 
 ## Installation
 
-Clone this repository and import the module:
+PSRainbow is available on the PowerShell Gallery:
 
 ```powershell
-Import-Module -Path 'path\to\PSRainbow\PSRainbow.psd1'
+Install-Module PSRainbow
 ```
-
-Or place the module folder in your PowerShell modules directory:
-- Windows: `$PROFILE\..\Modules\PSRainbow`
-- Linux/macOS: `~/.local/share/powershell/Modules/PSRainbow`
 
 ## Quick Start
 
@@ -30,23 +26,26 @@ Or place the module folder in your PowerShell modules directory:
 
 ```powershell
 # Using RGB values
-$red = New-ConsoleColor24 -Red 255 -Green 0 -Blue 0
+$Red = New-ConsoleColor24 -Red 255 -Green 0 -Blue 0
+
+# RGB can be specified positionally (in order RGB)
+$White = New-ConsoleColor24 255 255 255
 
 # Using hexadecimal
-$blue = New-ConsoleColor24 -Hex 0x0000FF
+$b=Blue = New-ConsoleColor24 -Hex 0x0000FF
 
 # Using a pre-defined color from PSRainbowColors
-$purple = $PSRainbowColors.Purple
+$Purple = $PSRainbowColors.Purple
 ```
 
 ### Format and Display Colors
 
 ```powershell
 # Format a color for foreground output
-$fgSeq = Format-ConsoleColor24 -Color $red -Type Fg
+$fgSeq = Format-ConsoleColor24 -Color $Red -Type Fg
 
 # Format a color for background output
-$bgSeq = Format-ConsoleColor24 -Color $blue -Type Bg
+$bgSeq = Format-ConsoleColor24 -Color $Blue -Type Bg
 
 # Use with Write-Host
 Write-Host "${fgSeq}This text is red"
