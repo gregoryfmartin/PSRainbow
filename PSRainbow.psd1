@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -30,7 +30,7 @@ CompanyName = 'Not Company'
 Copyright = '(c) Gregory F Martin (Not Gary). All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = 'Provides a library of 24-bit colors that can be used in PowerShell scripts.'
+Description = 'Provides a library of 24-bit colors that can be used in PowerShell scripts.'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = '5.1'
@@ -101,7 +101,7 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/gregoryfmartin/PSRainbow'
 
         # A URL to an icon representing this module.
         # IconUri = ''
