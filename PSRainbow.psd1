@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.0.1'
+ModuleVersion = '1.0.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -30,10 +30,10 @@ CompanyName = 'Not Company'
 Copyright = '(c) Gregory F Martin (Not Gary). All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+# Description = 'Provides a library of 24-bit colors that can be used in PowerShell scripts.'
 
 # Minimum version of the PowerShell engine required by this module
-# PowerShellVersion = ''
+# PowerShellVersion = '5.1'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
