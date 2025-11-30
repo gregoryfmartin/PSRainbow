@@ -9,4 +9,4 @@ Foreach($ColorDataKey in $RawColorData.Keys) {
     $PSRainbowColors[$ColorDataKey] = [ConsoleColor24]::new($RawColorData[$ColorDataKey])
 }
 
-Export-ModuleMember -Variable PSRainbowColors
+Export-ModuleMember -Function New-ConsoleColor24, Format-ConsoleColor24 -Variable PSRainbowColors
