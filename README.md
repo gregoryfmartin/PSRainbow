@@ -127,7 +127,7 @@ Write-Host "$(bRed)This $(ar)$(bGreen)is $(ar)$(bYellow)some $(ar)$(fOrange)wack
 
 ## Available Colors
 
-The module exports a `$PSRainbowColors` hashtable containing 250+ pre-defined colors. Access them like:
+The module exports a `$PSRainbowColors` hashtable containing 200+ pre-defined colors. Access them like:
 
 ```powershell
 $PSRainbowColors.Red
