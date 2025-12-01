@@ -12,7 +12,7 @@
 RootModule = 'PSRainbow.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.3'
+ModuleVersion = '1.1.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -27,7 +27,7 @@ Author = 'Gregory F Martin (Not Gary)'
 CompanyName = 'Not Company'
 
 # Copyright statement for this module
-Copyright = '(c) Gregory F Martin (Not Gary). All rights reserved.'
+Copyright = '(c) Gregory F Martin (Not Gary). PSRainbow is provided under the MIT License (MIT).'
 
 # Description of the functionality provided by this module
 Description = 'Provides a library of 24-bit colors that can be used in PowerShell scripts.'
@@ -69,7 +69,7 @@ Description = 'Provides a library of 24-bit colors that can be used in PowerShel
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @('New-ConsoleColor24', 'Format-ConsoleColor24')
+FunctionsToExport = @('*')
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
