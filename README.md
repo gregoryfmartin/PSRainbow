@@ -5,7 +5,7 @@ A PowerShell module that _accelerates_ the use of 24-bit true color for console 
 ## Features
 
 - **24-bit True Color Support**: Use any color in RGB space. Supports a wealth of named colors, client-defined channel values, or client-defined hexadecimal literals (formatted `0xFFFFFF`; does not support string formatted hexadecimal common in HTML (`#FFFFFF`)).
-- **Named Color Library**: 250+ pre-defined colors including system colors, web colors, and UI colors.
+- **Named Color Library**: 200+ pre-defined colors including system colors, web colors, and UI colors.
 - **Multi-Edition Support**: Works with PowerShell Desktop and PowerShell Core
 - **Easy-to-Use API**: Simple cmdlets to create and format colors
 - **ANSI Escape Sequence Generation**: Automatic ANSI sequence generation for foreground and background colors
